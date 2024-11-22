@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NeniscaAntoniaLab7.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="20,0"
+            Spacing="20">
+            
+            <Image
+                Source="antonia.jpg"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="Antonia, o studenta pasionata de informatica!" />
+
+            <Label
+                Text="Bine ai venit!"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Label
+                Text="Eu sunt Antonia Nenisca, studenta la Informatica Economica la FSEGA."
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Antonia Nenisca, viitor programator" />
+            
+            <Label
+                Text="Visul meu este să devin programator și să combin pasiunea pentru tehnologie cu dorința de a explora lumea!"
+                FontSize="16"
+                TextColor="#333333"
+                HorizontalTextAlignment="Center" />
+
+            <Label
+                Text="De la algoritmi complexi până la peisaje spectaculoase, fiecare zi este o nouă aventură!"
+                FontSize="14"
+                TextColor="#555555"
+                HorizontalTextAlignment="Center" />
+            
+            <Button
+                x:Name="CounterBtn"
+                Text="Click me" 
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Fill" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
